@@ -57,3 +57,14 @@
   font-weight: 800;
   margin-top: 3px;
 }
+
+.header_optionBasket {
+  display: flex;
+  align-items: ceneter;
+  color: #fff;
+}
+
+.header_optionLineTwoHeader_basketCount {
+  margin-right: 10px;
+  margin-left: 10px;
+}
