@@ -13,18 +13,61 @@ function Home() {
         />
 
         <div className="home_row">
-          <Product />
+          <Product
+            id="1212"
+            title="제품1"
+            price={3000}
+            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            rating={2}
+          />
+          <Product
+            id="1212"
+            title="제품1"
+            price={3000}
+            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            rating={2}
+          />
         </div>
 
         <div className="home_row">
-          <Product />
-          <Product />
-          <Product />
+          <Product
+            id="1212"
+            title="제품1"
+            price={3000}
+            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            rating={2}
+          />
+          <Product
+            id="1212"
+            title="제품1"
+            price={3000}
+            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            rating={2}
+          />
+          <Product
+            id="1212"
+            title="제품1"
+            price={3000}
+            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            rating={2}
+          />
         </div>
 
         <div className="home_row">
-          <Product />
-          <Product />
+          <Product
+            id="1212"
+            title="제품1"
+            price={3000}
+            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            rating={2}
+          />
+          <Product
+            id="1212"
+            title="제품1"
+            price={3000}
+            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            rating={2}
+          />
         </div>
       </div>
     </div>
