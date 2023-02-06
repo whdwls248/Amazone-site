@@ -14,38 +14,14 @@ function Home() {
 
         <div className="home_row">
           <Product
-            id="1212"
+            id="1264"
             title="제품1"
             price={3000}
             image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
             rating={2}
           />
           <Product
-            id="1212"
-            title="제품1"
-            price={3000}
-            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
-            rating={2}
-          />
-        </div>
-
-        <div className="home_row">
-          <Product
-            id="1212"
-            title="제품1"
-            price={3000}
-            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
-            rating={2}
-          />
-          <Product
-            id="1212"
-            title="제품1"
-            price={3000}
-            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
-            rating={2}
-          />
-          <Product
-            id="1212"
+            id="3246"
             title="제품1"
             price={3000}
             image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
@@ -55,14 +31,38 @@ function Home() {
 
         <div className="home_row">
           <Product
-            id="1212"
+            id="1956"
             title="제품1"
             price={3000}
             image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
             rating={2}
           />
           <Product
-            id="1212"
+            id="9874"
+            title="제품1"
+            price={3000}
+            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            rating={2}
+          />
+          <Product
+            id="3456"
+            title="제품1"
+            price={3000}
+            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            rating={2}
+          />
+        </div>
+
+        <div className="home_row">
+          <Product
+            id="7835"
+            title="제품1"
+            price={3000}
+            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            rating={2}
+          />
+          <Product
+            id="9641"
             title="제품1"
             price={3000}
             image="https://en.pimg.jp/024/292/158/1/24292158.jpg"

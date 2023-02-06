@@ -2,6 +2,8 @@ import React from "react";
 import "./Product.css";
 
 function Product({ id, title, image, price, rating }) {
+  const ratingArr = Array(rating).fill();
+
   return (
     <div className="product">
       <div className="product_info">
@@ -15,8 +17,8 @@ function Product({ id, title, image, price, rating }) {
         <div className="product_rating">
           {Array(rating)
             .fill()
-            .map(() => (
-              <p>★</p>
+            .map((el, idx) => (
+              <p key={id + idx}>★</p>
             ))}
         </div>
       </div>
