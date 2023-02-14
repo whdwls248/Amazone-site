@@ -1,14 +1,17 @@
 import React from "react";
 import CurrencyFormat from "react-currency-format";
+import { useStateValue } from "./StateProvider";
 
 function Subtotal() {
+  const [{ basket }, dispatch] = useStateValue();
+
   return (
     <div className="subtotal">
       <CurrencyFormat
         renderText={(value) => (
           <>
             <p>
-              총액 (0items) : <strong> 0원 </strong>
+              총액 ({basket.length} items) : <strong> 0원 </strong>
             </p>
             <small className="subtotal_gift">
               <input type="checkbox" />
