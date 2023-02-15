@@ -48,7 +48,7 @@ function Home() {
             id="3456"
             title="제품1"
             price={3000}
-            image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
+            image="https://www.autodaily.co.kr/news/photo/201704/335790_17345_2048.jpg"
             rating={2}
           />
         </div>
