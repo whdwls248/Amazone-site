@@ -13,8 +13,6 @@ function App() {
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      console.log("현재 사용자는" + user + "입니다");
-
       if (user) {
         dispatch({
           type: "SET_USER",
@@ -27,7 +25,7 @@ function App() {
         });
       }
     });
-  });
+  }, []);
 
   return (
     <Router>
