@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Payment.css";
 import { useStateValue } from "./StateProvider";
 import { Link } from "react-router-dom";
 import CheckoutProduct from "./CheckoutProduct";
+import { CurrencyFormat } from "react-currency-format";
+import { getBasketTotal } from "./Reducer";
+import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
+  const [error, setError] = useState(null);
+  const [disabled, setDisabled] = useState(true);
+  const [processing, setProcessing] = useState("");
+  const [succeeded, setSucceeded] = useState(false);
+  const [clientSecret, setClientSecret] = useState(true);
+
+  const stripe = useStripe();
+  const elements = useElements();
+
+  const handleSubmit = async (event) => {};
+
+  const handleChange = (event) => {
+    setDisabled(event.empty);
+    setError(event.error ? event.error.message : "");
+  };
 
   return (
     <div className="payment">
@@ -50,7 +68,27 @@ function Payment() {
               <h3> 결제 </h3>
             </div>
 
-            <div className="payment_details"></div>
+            <div className="payment_details">
+              <form onSubmit={handleSubmit}>
+                <CardElement onChange={handleChange} />
+
+                <div className="payment_priceContainer">
+                  <CurrencyFormat
+                    renderText={(value) => <h3> 총액 : {value} 원</h3>}
+                    decimalScale={2}
+                    value={getBasketTotal(basket)}
+                    displayType={"text"}
+                    thousandSeparator={true}
+                    prefix={"₩"}
+                  />
+
+                  <button disabled={processing || disabled || succeeded}>
+                    <span>{processing ? <p>결제 중...</p> : "결제하기"}</span>
+                  </button>
+                </div>
+                {error && <div>{error}</div>}
+              </form>
+            </div>
           </div>
         </div>
       </div>
