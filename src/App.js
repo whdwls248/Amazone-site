@@ -57,7 +57,7 @@ function App() {
               <>
                 <Header />
                 <Elements stripe={promise}>
-                  <Payment />
+                  <Payment key={5} />
                 </Elements>
               </>
             }

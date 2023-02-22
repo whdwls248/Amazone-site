@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseUrl: "...",
+  baseURL: "http://127.0.0.1:5001/fir-b5b2c/us-central1/api",
 });
 
 export default instance;
