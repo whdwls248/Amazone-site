@@ -39,7 +39,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login key={20} />} />
 
           <Route
             exact

@@ -73,7 +73,7 @@ function Payment() {
     getClientSecret();
   }, [basket]);
 
-  console.log("clientSecret", clientSecret);
+  console.log("clientSecret 비밀은 다음과 같아요ㄴ", clientSecret);
 
   return (
     <div className="payment">
@@ -103,8 +103,9 @@ function Payment() {
             <h3> 리뷰 와 배달 </h3>
           </div>
           <div className="payment_items">
-            {basket.map((item) => (
+            {basket.map((item, idx) => (
               <CheckoutProduct
+                key={idx}
                 id={item.id}
                 title={item.title}
                 image={item.image}
