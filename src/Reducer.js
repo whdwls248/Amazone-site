@@ -15,7 +15,7 @@ const reducer = (state, action) => {
 
     case "REMOVE_FROM_BASKET":
       const index = state.basket.findIndex(
-        (basketItem) => basketItem.id === action.id
+        (basketItem) => basketItem.id === action.item.id
       );
 
       let newBasket = [...state.basket];
@@ -23,7 +23,7 @@ const reducer = (state, action) => {
       if (index >= 0) {
         newBasket.splice(index, 1);
       } else {
-        console.warn("id", action.id, "가 장바구니에 없습니다.");
+        console.warn("id", action.item.id, "가 장바구니에 없습니다.");
       }
 
       return {
