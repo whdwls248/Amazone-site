@@ -76,7 +76,7 @@ function Payment() {
     getClientSecret();
   }, [basket]);
 
-  console.log("clientSecret 비밀은 다음과 같아요ㄴ", clientSecret);
+  console.log("clientSecret 비밀은 다음과 같아요", clientSecret);
 
   return (
     <div className="payment">
