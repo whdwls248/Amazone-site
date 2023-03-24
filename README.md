@@ -9,7 +9,7 @@
 > Reducer 사용하여 구현
 * 결제 기능
 > Stripe를 사용하여 결제 기능 구현
-> 결제 정보는 firestore에 저장
+> express를 통해 결제 정보는 firestore에 저장
 
 ## 개선사항
 * 반응형 UI 적용 및 개선
